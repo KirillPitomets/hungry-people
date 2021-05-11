@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -7,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -26,15 +33,49 @@
     <title>Hungry people</title>
     <meta name="description" content="краткое описание страницы">
 </head>
+
 <body>
-
-        <h1>
-            Hungry people
-        </h1>
-
-
-
-
-
+    <div class="home">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">HOME</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">ABOUT</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">TEAM</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">BOOKING</a></li>
+                <li class="nav__item"><a class="nav__link" href="#"><img src="./images/home/Vector.png"
+                            alt="steering wheel"></a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="#">MENU</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">GALERY</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">EVENTS</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <div class="home__body">
+            <div class="called">
+                <p class="subtitle">R E S T A U R A N T</p>
+                <H1 class="title">HUNGRY PEOPLE</H1>
+            </div>
+            <div class="home__btn">
+                <button class="book__table">BOOK TABLE</button>
+                <button class="explore">EXPLORE</button>
+            </div>
+            <div class="scroll__btn">
+                <a href="#" class="scroll__link"><img src="./images/home/down-btn.png" alt="down"></a>
+            </div>
+            <div class="schedule">
+                <p class="schedule__day">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+            </div>
+            <div class="social">
+                <a href="#" class="social__icon"><img src="./images/home/facebook.png" alt="icon"
+                        class="social_icon__img"></a>
+                <a href="#" class="social__icon"><img src="./images/home/twitter.png" alt="icon"
+                        class="social_icon__img"></a>
+                <a href="#" class="social__icon"><img src="./images/home/instagram.png" alt="icon"
+                        class="social_icon__img"></a>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
