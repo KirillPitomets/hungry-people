@@ -41,7 +41,7 @@
             font-style: normal;
         }
         
-// ========= Color ========
+// ========= Variables ========
 // ========================= 
 
 $decor-color: #E8C300;
@@ -50,6 +50,9 @@ $light-theme: #000;
 $dark-theme: #fff;
 
 $span-color: #333;
+
+$heading: 'Dosis', sans-serif;
+$caption: 'OpenSans', sans-serif;
 
 
 
@@ -64,9 +67,10 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
 
-body {
-    margin: 0;
+html {
+    scroll-behavior: smooth;
 }
+
 
 .container {
     width: 100%;
@@ -78,17 +82,18 @@ body {
 // =========================
 
 .home {
-    // Для первой секции
-    max-width: 1440px;
+    width: 100%;
     min-height: 100vh;
     background-image: url('../images/home/header-bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .nav__list{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    // width: 90%;
     margin: 0 auto;
 }
 
@@ -205,7 +210,7 @@ body {
     flex-direction: column;
     position: absolute;
     top: 0;
-    right: 40px;
+    right: 0;
 }
 
 .social__icon{
@@ -228,7 +233,7 @@ body {
 .schedule{
     position: absolute;
     top: 0px;
-    left: 30px;
+    left: 0;
 }
 
 .schedule__day{
@@ -251,26 +256,87 @@ body {
 
 .flex-content {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-evenly; 
     align-items: center;
     
+    flex-wrap: wrap;
 }
 
+.title-wrapper {
+    width: 100%;
+    max-width: 600px;
+}
+
+.text-title {
+    font-family: $heading;
+    font-size: 2.25rem;
+    line-height: 1.333;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 5px;
+        background-color: $decor-color;
+        position: absolute;
+        left: calc(50% - 30px);
+        bottom: -6px;
+
+        border-radius: 50px;
+    }
+}
+
+.subtext {
+    font-family: $caption;
+    font-size: .875rem;
+    line-height: 1.71;
+    color: $light-theme;
+
+    text-align: center;
 
 
-// .title-wrapper {
+}
 
-// }
+.subtext__weight {
+    display: block;
+    margin: 20px 0;
 
-// .title {
-// }
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
 
-// .subtext {
-// }
+.photo {
+    width: 40%;
+    padding-top: 37%;
 
-// .photo {
-// }
+    position: relative;
 
-// .photo__img {
-// }
+    &::after {
+        content: "";
+   
+        width: 250px;
+        height: 250px;
+
+        background: transparent;
+        border: 20px solid $decor-color;
+        border-radius: 5px;
+
+        position: absolute;
+        top: calc(50% - 125px);
+        right: -13%;
+        z-index: 1;
+    
+    }
+}
+
+.photo__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
