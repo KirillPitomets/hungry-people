@@ -1,3 +1,46 @@
+
+// ========= Font ========
+// =========================
+
+    // === Open Sans ===git
+        //  regular
+        @font-face {
+            font-family: 'OpenSans';
+            src: url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot);
+            src: url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot?#iefix) format('embedded-opentype'),
+                 url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.woff) format('woff'),
+                 url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.woff2) format('woff2'),
+                 url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.ttf) format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+                //  Bold
+        @font-face {
+            font-family: 'OpenSans';
+            src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot);
+            src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot#iefix) format('embedded-opentype'),
+                 url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.woff) format('woff'),
+                 url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.woff2) format('woff2'),
+                 url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.ttf) format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+            // == Dosis ==
+                // bold
+        
+        @font-face {
+            font-family: 'Dosis';
+            src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot);
+            src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot#iefix) format('embedded-opentype'),
+                    url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff) format('woff'),
+                    url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff2) format('woff2'),
+                    url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.ttf) format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+        
 // ========= Color ========
 // ========================= 
 
@@ -8,44 +51,58 @@ $dark-theme: #fff;
 
 $span-color: #333;
 
-// ========= Font ========
+
+
+// ========= Default style ========
 // =========================
 
-    // === Open Sans ===git
-        //  regular
-@font-face {
-    font-family: 'OpenSans';
-    src: url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot);
-    src: url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.woff) format('woff'),
-         url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.woff2) format('woff2'),
-         url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal;
+*,*::before,*::after {
+    box-sizing: border-box;
 }
 
-        //  Bold
-@font-face {
-    font-family: 'OpenSans';
-    src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot);
-    src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot#iefix) format('embedded-opentype'),
-         url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.woff) format('woff'),
-         url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.woff2) format('woff2'),
-         url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.ttf) format('truetype');
-    font-weight: 700;
-    font-style: normal;
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
 }
 
-    // == Dosis ==
-        // bold
-
-@font-face {
-    font-family: 'Dosis';
-    src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot);
-    src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot#iefix) format('embedded-opentype'),
-            url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff) format('woff'),
-            url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff2) format('woff2'),
-            url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.ttf) format('truetype');
-    font-weight: 700;
-    font-style: normal;
+body {
+    margin: 0;
 }
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+// ========= Section ========
+// =========================
+
+.wrapper {
+    margin-top: 100px;
+}
+
+.flex-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    
+}
+
+
+
+// .title-wrapper {
+
+// }
+
+// .title {
+// }
+
+// .subtext {
+// }
+
+// .photo {
+// }
+
+// .photo__img {
+// }
+
