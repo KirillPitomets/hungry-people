@@ -74,6 +74,174 @@ body {
     margin: 0 auto;
 }
 
+// ========= Home ========
+// =========================
+
+.home {
+    // Для первой секции
+    max-width: 1440px;
+    min-height: 100vh;
+    background-image: url('../images/home/header-bg.jpg');
+    background-repeat: no-repeat;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav__item{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.nav__link:hover{
+    opacity: 70%;
+}
+
+.nav__link{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.home__body{
+    position: relative;
+}
+
+.called{
+    text-align: center;
+    margin-top: 85px;
+}
+
+.subtitle{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.title{
+    font-family: Karla;
+    font-size: 96px;
+    line-height: 0px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.title::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: $decor-color;
+    position: absolute;
+    bottom: -70px;
+    right: 47%;
+}
+
+.home__btn{
+    text-align: center;
+
+}
+
+.book__table{
+    width: 200px;
+    height: 60px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    background-color: $decor-color;
+    margin-right: 40px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.explore{
+    width: 200px;
+    height: 60px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.book__table:hover{
+    transform: scale(1.05);
+}
+.book__table:active{
+    opacity: 50%;
+}
+
+.explore:hover{
+    transform: scale(1.05);
+}
+
+.explore:active{
+    opacity: 50%;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.social__icon{
+    margin-bottom: 10px;
+}
+
+.social__icon:hover{
+    opacity: 50%;
+}
+
+.scroll__btn{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.scroll__btn:hover{
+    opacity: 70%;
+}
+
+.schedule{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+}
+
+.schedule__day{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
 // ========= Section ========
 // =========================
 
