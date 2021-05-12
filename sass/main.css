@@ -42,6 +42,42 @@
   background-color: #000;
 }
 
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .container {
+    max-width: 1380px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 696px) {
+  .container {
+    max-width: 696px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    max-width: 425px;
+  }
+}
+
+@media (max-width: 320PX) {
+  .container {
+    max-width: 320px;
+  }
+}
+
 .content {
   color: #fff;
   width: 100%;
@@ -78,6 +114,27 @@
   padding-bottom: 100px;
 }
 
+@media (max-width: 1380px) {
+  .main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 696px) {
+  .main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .main__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,7 +153,44 @@
   height: 30em;
 }
 
+@media (max-width: 1380px) {
+  .photo {
+    width: 28em;
+    height: 28em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .photo {
+    width: 25em;
+    height: 25em;
+  }
+}
+
+@media (max-width: 696px) {
+  .photo {
+    width: 20em;
+    height: 20em;
+  }
+}
+
+@media (max-width: 425px) {
+  .photo {
+    width: 15em;
+    height: 15em;
+  }
+}
+
+@media (max-width: 320PX) {
+  .photo {
+    width: 10em;
+    height: 10em;
+  }
+}
+
 .photo__image {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -121,9 +215,62 @@
   z-index: 1;
 }
 
+@media (max-width: 696px) {
+  .photo:after {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 425px) {
+  .photo:after {
+    width: 150px;
+    height: 150px;
+    top: 10%;
+    border: 15px solid #E8C300;
+  }
+}
+
+@media (max-width: 320PX) {
+  .photo:after {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    border: 10px solid #E8C300;
+  }
+}
+
 .title {
   width: 100%;
   max-width: 600px;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    word-wrap: break-word;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 696px) {
+  .title {
+    word-wrap: break-word;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 425px) {
+  .title {
+    word-wrap: break-word;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 320PX) {
+  .title {
+    word-wrap: break-word;
+    max-width: 200px;
+  }
 }
 
 .text__title {
