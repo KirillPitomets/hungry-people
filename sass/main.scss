@@ -27,7 +27,6 @@ $span-color: #333;
         //  Bold
 @font-face {
     font-family: 'OpenSans';
-<<<<<<< HEAD
     src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot);
     src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot#iefix) format('embedded-opentype'),
          url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.woff) format('woff'),
@@ -35,11 +34,25 @@ $span-color: #333;
          url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.ttf) format('truetype');
     font-weight: 700;
     font-style: normal;
-=======
+
     src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.ttf) format(ttf);
     font-weight: 800;
     font-style: normal;
 }
+
+    // == Dosis ==
+        // Bold
+
+        @font-face {
+            font-family: 'Dosis';
+            src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot);
+            src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot#iefix) format('embedded-opentype'),
+                    url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff) format('woff'),
+                    url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff2) format('woff2'),
+                    url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.ttf) format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
 
 *{
     box-sizing: border-box;
@@ -123,25 +136,7 @@ $span-color: #333;
 
 .home__btn{
     text-align: center;
-
->>>>>>> Larin
 }
-
-    // == Dosis ==
-        // Bold
-
-@font-face {
-    font-family: 'Dosis';
-    src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot);
-    src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot#iefix) format('embedded-opentype'),
-            url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff) format('woff'),
-            url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff2) format('woff2'),
-            url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.ttf) format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-<<<<<<< HEAD
-=======
 
 .scroll__btn:hover{
     opacity: 70%;
@@ -163,4 +158,3 @@ $span-color: #333;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }
->>>>>>> Larin
