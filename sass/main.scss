@@ -27,6 +27,7 @@ $span-color: #333;
         //  Bold
 @font-face {
     font-family: 'OpenSans';
+<<<<<<< HEAD
     src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot);
     src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot#iefix) format('embedded-opentype'),
          url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.woff) format('woff'),
@@ -34,6 +35,96 @@ $span-color: #333;
          url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.ttf) format('truetype');
     font-weight: 700;
     font-style: normal;
+=======
+    src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.ttf) format(ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home {
+    // Для первой секции
+    max-width: 1440px;
+    min-height: 100vh;
+    background-image: url('../images/home/header-bg.jpg');
+    background-repeat: no-repeat;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav__item{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.nav__link:hover{
+    opacity: 70%;
+}
+
+.nav__link{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.home__body{
+    position: relative;
+}
+
+.called{
+    text-align: center;
+    margin-top: 85px;
+}
+
+.subtitle{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.title{
+    font-family: $heading;
+    font-size: 96px;
+    line-height: 0px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.title::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: $decor-color;
+    position: absolute;
+    bottom: -70px;
+    right: 47%;
+}
+
+.home__btn{
+    text-align: center;
+
+>>>>>>> Larin
 }
 
     // == Dosis ==
@@ -49,3 +140,27 @@ $span-color: #333;
     font-weight: 700;
     font-style: normal;
 }
+<<<<<<< HEAD
+=======
+
+.scroll__btn:hover{
+    opacity: 70%;
+}
+
+.schedule{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+}
+
+.schedule__day{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+>>>>>>> Larin
