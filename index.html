@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link -->
     <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon.png">
@@ -32,30 +33,108 @@
     <title>Hungry people</title>
     <meta name="description" content="краткое описание страницы">
 </head>
-<body>
-    <section id="our__team">
-        <div class="container">
-            <div class="content">
-                <header class="header">Our team</header>
-                <main class="main">
-                    <div class="main__items photo"><img class="photo__image" src="./images/section3/image.png"></div>
-                    <div class="main__items">
-                        <div class="title">
-                            <h3 class="text__title">
-                                MASTER CHEF
-                            </h3>
-                            <div class="subtext">
-                                <span class="subtext__weight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</span>
-    
-                                Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
-                            </div>
-                        </div>
-                    </div>
-                </main>
+<body>    
+<div class="home">
+    <div class="container">
+        <nav class="nav">
+            <ul class="nav__list">
+                <input type="checkbox" class="burger" id="burger">
+                <label for="burger" class="burger_label"></label>
+                <li class="nav__item"><a class="nav__link" href="#">HOME</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about-us">ABOUT</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">TEAM</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">BOOKING</a></li>
+                <li class="nav__item"><a class="nav__link wheel" href="#"><img src="./images/home/Vector.png"
+                            alt="steering wheel"></a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="#">MENU</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">GALERY</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">EVENTS</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+        <div class="home__body">
+            <div class="called">
+                <p class="subtitle">R E S T A U R A N T</p>
+                <h1 class="title">HUNGRY PEOPLE</h1>
+            </div>
+            <div class="home__btn">
+                <button class="book__table">BOOK TABLE</button>
+                <button class="explore">EXPLORE</button>
+            </div>
+            <div class="scroll__btn">
+                <a href="#about-us" class="scroll__link"><img src="./images/home/down-btn.png" alt="down"></a>
+            </div>
+            <div class="schedule">
+                <p class="schedule__day">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+            </div>
+            <div class="social">
+                <a href="#" class="social__icon"><img src="./images/home/facebook.png" alt="icon"
+                        class="social_icon__img"></a>
+                <a href="#" class="social__icon"><img src="./images/home/twitter.png" alt="icon"
+                        class="social_icon__img"></a>
+                <a href="#" class="social__icon"><img src="./images/home/instagram.png" alt="icon"
+                        class="social_icon__img"></a>
             </div>
         </div>
+    </div>
+</div>
 
-    </section>
+         
+<section id="about-us">
+    <div class="container">
+        <div class="wrapper">
+            <div class="flex-content">
+
+                <div class="title-wrapper">
+                    <h3 class="text-title">
+                        About us
+                    </h3>
+                    <div class="subtext">
+                        <span class="subtext__weight">   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. </span>
+
+                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                    </div>
+                </div>
+
+                <div class="photo">
+                    <img class="photo__img" src="./images/about-us/1.jpg" alt="Photo" title="Coal">
+                </div>
+                <div class="scroll__btn">
+                    <a href="#" class="scroll__link"><img src="./images/home/down-btn.png" alt="down"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="our__team">
+    <div class="container">
+        <div class="content">
+            <header class="header">Our team</header>
+            <main class="main">
+                <div class="main__items photo"><img class="photo__image" src="./images/section3/image.png"></div>
+                <div class="main__items">
+                    <div class="title">
+                        <h3 class="text__title">
+                            MASTER CHEF
+                        </h3>
+                        <div class="subtext">
+                            <span class="subtext__weight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</span>
+
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</section>
+
+
+
+
 </body>
 
 </html>
