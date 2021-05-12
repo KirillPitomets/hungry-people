@@ -30,6 +30,11 @@ $span-color: #333;
     box-sizing: border-box;
 }
 
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
 .home {
     // Для первой секции
     max-width: 1440px;
@@ -63,6 +68,7 @@ $span-color: #333;
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .home__body{
     position: relative;
 }
@@ -82,7 +88,7 @@ $span-color: #333;
 }
 
 .title{
-    font-family: Karla;
+    font-family: $heading;
     font-size: 96px;
     line-height: 0px;
     color: #FFFFFF;
