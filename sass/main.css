@@ -19,13 +19,16 @@
 
 .container {
   width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 .home {
-  max-width: 1440px;
+  width: 100%;
   min-height: 100vh;
   background-image: url("../images/home/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
