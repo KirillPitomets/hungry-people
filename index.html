@@ -8,12 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link -->
     <link rel="stylesheet" href="./sass/main.css">
-    <link rel="stylesheet" href="./css/style.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -86,7 +81,35 @@
         <div class="wrapper">
             <div class="flex-content">
 
-                <div class="title-wrapper">
+                <div class="flex-content__item">
+                    <h3 class="text-title">
+                        About us
+                    </h3>
+                    <div class="subtext">
+                        <span class="subtext__weight">   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna. </span>
+
+                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+                    </div>
+                </div>
+
+                <div class="photo">
+                    <div class="photo__picture">
+                        <img class="photo__img" src="./images/about-us/1.jpg" alt="Photo" title="Coal">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+     <!-- Ирина заменишь эту секция на свою -->
+<section id="about-us">
+    <div class="container">
+        <div class="wrapper">
+            <div class="flex-content">
+
+                <div class="flex-content__item">
                     <h3 class="text-title">
                         About us
                     </h3>
@@ -100,41 +123,70 @@
                 <div class="photo">
                     <img class="photo__img" src="./images/about-us/1.jpg" alt="Photo" title="Coal">
                 </div>
-                <div class="scroll__btn">
-                    <a href="#" class="scroll__link"><img src="./images/home/down-btn.png" alt="down"></a>
+          
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="wrapper">
+            <div class="flex-content">
+
+                <div class="flex-content__item">
+                    <h3 class="text-title">
+                        book a table
+                    </h3>
+                    <form action="/" class="book">
+
+                        <div class="input-col">
+                            <input class="input" type="text" placeholder="Name" title="Name" required>
+                            <input class="input" type="text" placeholder="Email" title="Email" required>
+                        </div>
+
+                        <div class="input-col">
+
+                            <input class="input input_close-select" type="text" placeholder="Phone" title="Phone" required>
+                            <input class="input input_close-select" type="number" placeholder="People" title="People" required min="1" max="6">
+                              
+                    
+
+                        </div>
+
+                        <div class="input-col">
+
+                            <input class="input input_close-select" type="date" placeholder="Date(mm/dd)" title="Date" required>
+                            <input class="input input_close-select" type="time" placeholder="Time" title="Time" required>
+                       
+
+                        </div>
+                    <button type="submit" class="btn-form">
+                        book now
+                    </button>
+                    </form>
+                </div>
+
+                <div class="photo">
+                    <div class="photo__pictury">
+                        <img class="photo__img" src="./images/book-a-table/01.jpg" alt="Clock" title="Clock">
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
 </section>
-<section id="our__team">
+
+<aside>
     <div class="container">
-        <div class="content">
-            <header class="header">Our team</header>
-            <main class="main">
-                <div class="main__items photo"><img class="photo__image" src="./images/section3/image.png"></div>
-                <div class="main__items">
-                    <div class="title">
-                        <h3 class="text__title">
-                            MASTER CHEF
-                        </h3>
-                        <div class="subtext">
-                            <span class="subtext__weight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</span>
-
-                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
+        <p class="mini-info">
+            Mon - Fri: <span class="span-weight"> 8PM - 10PM, </span> Sat - Sun: <span class="span-weight"> 8PM - 3AM,</span> Phone: <span class="mini-info"> +40 729 131 637/+40 726 458 782 </span>
+        </p>
     </div>
-
-</section>
-
-
-
+</aside>
 
 </body>
-
 </html>
