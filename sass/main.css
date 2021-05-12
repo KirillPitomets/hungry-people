@@ -22,13 +22,35 @@
   font-style: normal;
 }
 
-.home {
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.ttf) format(ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.ttf) format(ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.home__wrapper {
   width: 100%;
+  margin: 0 auto;
+}
+
+.home {
   min-height: 100vh;
   background-image: url("../images/home/header-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .nav__list {
@@ -53,7 +75,7 @@
 }
 
 .nav__link {
-  font-family: "OpenSans", sans-serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -72,7 +94,7 @@
 }
 
 .subtitle {
-  font-family: "OpenSans", sans-serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -80,23 +102,22 @@
   color: #FFFFFF;
 }
 
-.title {
-  font-family: "Dosis", sans-serif;
+.called_restourant {
+  font-family: Dosis;
   font-size: 96px;
   line-height: 0px;
   color: #FFFFFF;
   position: relative;
 }
 
-.title::after {
+.called_restourant::after {
   content: "";
   display: block;
   width: 60px;
   height: 5px;
   background-color: #E8C300;
-  position: absolute;
-  bottom: -70px;
-  right: 47%;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .home__btn {
@@ -106,7 +127,7 @@
 .book__table {
   width: 200px;
   height: 60px;
-  font-family: "OpenSans", sans-serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -123,7 +144,7 @@
 .explore {
   width: 200px;
   height: 60px;
-  font-family: "OpenSans", sans-serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -191,7 +212,7 @@
 }
 
 .schedule__day {
-  font-family: "OpenSans", sans-serif;
+  font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -211,24 +232,23 @@
 .burger_label {
   display: none;
   position: absolute;
-  top: -15%;
-  right: 5%;
+  top: 0px;
+  right: 0;
   width: 50px;
   height: 50px;
   background-image: url("../images/home/burgermenu.png");
   background-size: cover;
   background-color: #E8C300;
-  cursor: pointer;
 }
 
 @media (max-width: 970px) {
-  .title {
+  .called_restourant {
     font-size: 80px;
   }
 }
 
 @media (max-width: 850px) {
-  .title {
+  .called_restourant {
     font-size: 70px;
   }
   .nav__link {
@@ -237,6 +257,9 @@
   .book__table, .explore {
     width: 150px;
     height: 50px;
+  }
+  .home {
+    padding-top: 50px;
   }
   .wheel {
     display: none;
@@ -255,19 +278,14 @@
   .burger:checked ~ .nav__item {
     display: block;
   }
-  .home {
-    min-height: auto;
-    padding: 50px 0;
-    position: relative;
-  }
 }
 
 @media (max-width: 750px) {
-  .title {
+  .called_restourant {
     font-size: 40px;
   }
-  .title::after {
-    right: 45%;
+  .called_restourant::after {
+    margin-top: 50px;
   }
 }
 
@@ -281,8 +299,8 @@
   .explore {
     margin-top: 20px;
   }
-  .title::after {
-    right: 43%;
+  .called_restourant::after {
+    margin-top: 50px;
   }
   .schedule {
     position: static;
@@ -290,10 +308,10 @@
   }
   .schedule__day {
     -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-            writing-mode: horizontal-tb;
+    -ms-writing-mode: lr-tb;
+    writing-mode: horizontal-tb;
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     margin-top: 50px;
   }
   .social {
