@@ -1,98 +1,44 @@
-// ========= Color ========
-// ========================= 
+@import 'fonts';
+@import 'variable';
 
-$decor-color: #E8C300;
-
-$light-theme: #000;
-$dark-theme: #fff;
-
-$span-color: #333;
-
-// ========= Font ========
+// ========= Section ========
 // =========================
 
-    // === Open Sans ===
-        //  Regular
-@font-face {
-    font-family: 'OpenSans';
-    src: url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot);
-    src: url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.woff) format('woff'),
-         url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.woff2) format('woff2'),
-         url(../fonts/OpenSans/OpenSans-Regular/OpenSans-Regular.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-        //  Bold
-@font-face {
-    font-family: 'OpenSans';
-    src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot);
-    src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.eot#iefix) format('embedded-opentype'),
-         url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.woff) format('woff'),
-         url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.woff2) format('woff2'),
-         url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.ttf) format('truetype');
-    font-weight: 700;
-    font-style: normal;
-
-    src: url(../fonts/OpenSans/OpenSans-Bold/OpenSans-Bold.ttf) format(ttf);
-    font-weight: 800;
-    font-style: normal;
-}
-
-    // == Dosis ==
-        // Bold
-
-        @font-face {
-            font-family: 'Dosis';
-            src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot);
-            src: url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.eot#iefix) format('embedded-opentype'),
-                    url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff) format('woff'),
-                    url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.woff2) format('woff2'),
-                    url(../fonts/Dosis/Dosis-Bold/Dosis-Bold.ttf) format('truetype');
-            font-weight: 700;
-            font-style: normal;
-        }
-
-*{
-    box-sizing: border-box;
-}
-
-.container{
+.container {
     width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
+.wrapper {
+    margin-top: 100px;
+}
+
 .home {
-    // Для первой секции
-    max-width: 1440px;
+    width: 100%;
     min-height: 100vh;
     background-image: url('../images/home/header-bg.jpg');
     background-repeat: no-repeat;
 }
 
-.nav__list{
+.flex-content {
     display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
+    justify-content: space-evenly; 
+    align-items: center;
+    
+    flex-wrap: wrap;
 }
 
-.nav__item{
-    list-style-type: none;
-    margin-top: 20px;
+.title-wrapper {
+    width: 100%;
+    max-width: 600px;
 }
 
-.nav__link:hover{
-    opacity: 70%;
-}
-
-.nav__link{
-    font-family: Open Sans;
-    font-style: normal;
+.text-title {
+    font-family: $heading;
+    font-size: 2.25rem;
+    line-height: 1.333;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 18px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -103,18 +49,21 @@ $span-color: #333;
 
 .called{
     text-align: center;
-    margin-top: 85px;
-}
+    position: relative;
 
-.subtitle{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-    color: #FFFFFF;
-}
+    &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 5px;
+        background-color: $decor-color;
+        position: absolute;
+        left: calc(50% - 30px);
+        bottom: -6px;
 
+        border-radius: 50px;
+    }
+}
 .title{
     font-family: $heading;
     font-size: 96px;
@@ -123,38 +72,52 @@ $span-color: #333;
     position: relative;
 }
 
-.title::after{
-    content: "";
-    display: block;
-    width: 60px;
-    height: 5px;
-    background-color: $decor-color;
-    position: absolute;
-    bottom: -70px;
-    right: 47%;
-}
+.subtext {
+    font-family: $caption;
+    font-size: .875rem;
+    line-height: 1.71;
+    color: $light-theme;
 
-.home__btn{
     text-align: center;
+
+
 }
 
-.scroll__btn:hover{
-    opacity: 70%;
+.subtext__weight {
+    display: block;
+    margin: 20px 0;
+
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5;
 }
 
-.schedule{
-    position: absolute;
-    top: 0px;
-    left: 30px;
+.photo {
+    width: 50%;
+    max-width: 575px;
+    margin-right: 60px;
+
+    position: relative;
+
+    &::after {
+        content: "";
+   
+        width: 250px;
+        height: 250px;
+
+        background: transparent;
+        border: 20px solid $decor-color;
+        border-radius: 5px;
+
+        position: absolute;
+        top: calc(50% - 125px);
+        right: -13%;
+        z-index: 1;
+    
+    }
+
+    &__img {
+        width: 100%;
+    }
 }
 
-.schedule__day{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 12px;
-    color: #fff;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-}
