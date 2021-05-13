@@ -439,10 +439,8 @@ $xs: 320PX;
 * {
     box-sizing: border-box;
 }
-.container {
+.container__dark {
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
     background-color: $dark-theme;
     @media (max-width: $xxl) {
         max-width: 1440px;
