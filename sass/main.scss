@@ -568,7 +568,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 43px 0;
 }
 
-.number-phone {
+.no-wrap {
   white-space: nowrap;
   line-height: 2em;
 }
@@ -581,10 +581,18 @@ input[type="number"]::-webkit-inner-spin-button {
 .form-footer {
   display: flex;
   align-items: center;
+
+  @media (max-width:440px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .form-footer__item {
   width: 50%;
+
+  @media (max-width:440px) {
+    width: 100%;
+  }
 }
 
 // ========= SVG ========

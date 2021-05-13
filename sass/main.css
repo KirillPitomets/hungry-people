@@ -572,7 +572,7 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 43px 0;
 }
 
-.number-phone {
+.no-wrap {
   white-space: nowrap;
   line-height: 2em;
 }
@@ -589,9 +589,22 @@ input[type=number]::-webkit-inner-spin-button {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 440px) {
+  .form-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 
 .form-footer__item {
   width: 50%;
+}
+@media (max-width: 440px) {
+  .form-footer__item {
+    width: 100%;
+  }
 }
 
 .contact-info {
