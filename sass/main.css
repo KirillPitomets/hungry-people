@@ -1094,6 +1094,10 @@ input[type="number"]::-webkit-inner-spin-button {
   border: none;
 }
 
+.menu__wrapper {
+  padding-bottom: 100px;
+}
+
 .dishes__list {
   -webkit-column-count: 3;
           column-count: 3;
